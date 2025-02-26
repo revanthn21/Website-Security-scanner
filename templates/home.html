@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Website Security Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="templates/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/scanner">Scanner</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Welcome to the Website Security Scanner</h1>
+        <p>Use our tool to scan your website for potential security vulnerabilities.</p>
+        <br>
+        <!-- Add the Scanner Page button -->
+        <a href="{{ url_for('scanner') }}">
+            <button type="button">Go to Scanner Page</button>
+        </a>
+    </div>
+</body>
+</html>

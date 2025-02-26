@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App Security Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="templates/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/scanner">Scanner</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+           
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Website Security Scanner</h1>
+        <form method="post">
+            <label for="url">Enter URL to scan:</label>
+            <input type="url" id="url" name="url" required>
+            <button type="submit" name="scan" value="sql_injection">Scan for SQL Injection</button>
+            <button type="submit" name="scan" value="xss">Scan for XSS</button>
+            <button type="submit" name="scan" value="csrf">Scan for CSRF</button>
+        </form>
+
+        {% if results %}
+            <h2>Scan Results</h2>
+            <ul>
+                {% for result in results %}
+                    <li>{{ result }}</li>
+                {% endfor %}
+            </ul>
+            <form method="post" action="/generate_report">
+                <input type="hidden" name="url" value="{{ url }}">
+                {% for result in results %}
+                    <input type="hidden" name="results" value="{{ result }}">
+                {% endfor %}
+                <button type="submit">Download Report as PDF</button>
+            </form>
+        {% endif %}
+    </div>
+</body>
+</html>

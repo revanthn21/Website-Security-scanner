@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../static/Image.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    max-width: 1000px;
+    margin: 120px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    color: #1d3557;
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+input[type="url"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="url"]:focus {
+    border-color: #1d3557;
+    outline: none;
+    box-shadow: 0 0 6px rgba(29, 53, 87, 0.15);
+}
+
+button {
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 250px;
+    background-color: #1d3557;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #457b9d;
+    box-shadow: 0 4px 10px rgba(69, 123, 157, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    color: #1d3557;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    background-color: #e9ecef;
+}
+nav {
+    background-color: #007bff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items */
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #1d3557;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Optional: Make the button take full width */
+    max-width: 250px; /* Optional: Set a max width for the button */
+    margin: 10px 0; /* Optional: Add vertical space between buttons */
+}
+
+button:hover {
+    background-color: #457b9d;
+}
+.container {
+    width: 60%;
+    max-width: 1000px;
+    margin: 120px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center; /* Center-align content within the container */
+}
+
+.go-to-scanner {
+    padding: 12px 24px;
+    background-color: #1d3557;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Optional: Add some space above the button */
+}
+
+.go-to-scanner:hover {
+    background-color: #457b9d;
+}
+
